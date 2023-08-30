@@ -116,6 +116,45 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named BHV_SimpleWaypoint
+
+# Build rule for target.
+BHV_SimpleWaypoint: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BHV_SimpleWaypoint
+.PHONY : BHV_SimpleWaypoint
+
+# fast build rule for target.
+BHV_SimpleWaypoint/fast:
+	$(MAKE) $(MAKESILENT) -f src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build
+.PHONY : BHV_SimpleWaypoint/fast
+
+#=============================================================================
+# Target rules for targets named pExampleApp
+
+# Build rule for target.
+pExampleApp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pExampleApp
+.PHONY : pExampleApp
+
+# fast build rule for target.
+pExampleApp/fast:
+	$(MAKE) $(MAKESILENT) -f src/pExampleApp/CMakeFiles/pExampleApp.dir/build.make src/pExampleApp/CMakeFiles/pExampleApp.dir/build
+.PHONY : pExampleApp/fast
+
+#=============================================================================
+# Target rules for targets named pXRelayTest
+
+# Build rule for target.
+pXRelayTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pXRelayTest
+.PHONY : pXRelayTest
+
+# fast build rule for target.
+pXRelayTest/fast:
+	$(MAKE) $(MAKESILENT) -f src/pXRelayTest/CMakeFiles/pXRelayTest.dir/build.make src/pXRelayTest/CMakeFiles/pXRelayTest.dir/build
+.PHONY : pXRelayTest/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +163,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... BHV_SimpleWaypoint"
+	@echo "... pExampleApp"
+	@echo "... pXRelayTest"
 .PHONY : help
 
 

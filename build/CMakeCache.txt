@@ -16,6 +16,9 @@
 
 ARCHIVE_OUTPUT_DIRECTORY:PATH=/home/toyat/Documents/MIT/2680/moos-ivp-toyat/lib
 
+//Dependencies for the target
+BHV_SimpleWaypoint_LIB_DEPENDS:STATIC=general;helmivp;general;behaviors;general;ivpbuild;general;logic;general;ivpcore;general;bhvutil;general;mbutil;general;geometry;general;m;
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -251,12 +254,15 @@ LIBRARY_OUTPUT_DIRECTORY:PATH=/home/toyat/Documents/MIT/2680/moos-ivp-toyat/lib
 LIBRARY_OUTPUT_PATH:PATH=/home/toyat/Documents/MIT/2680/moos-ivp-toyat/lib
 
 //Base directory of the MOOS-IvP source tree
-MOOSIVP_SOURCE_TREE_BASE:PATH=MOOSIVP_SOURCE_TREE_BASE-NOTFOUND
+MOOSIVP_SOURCE_TREE_BASE:PATH=/home/toyat/moos-ivp
 
 //The directory containing a CMake configuration file for MOOS.
 MOOS_DIR:PATH=/home/toyat/moos-ivp/build/MOOS/MOOSCore
 
 RUNTIME_OUTPUT_DIRECTORY:PATH=/home/toyat/Documents/MIT/2680/moos-ivp-toyat/bin
+
+//tell me about all compiler warnings (-Wall) 
+WALL_ON:BOOL=OFF
 
 
 ########################
@@ -373,7 +379,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
