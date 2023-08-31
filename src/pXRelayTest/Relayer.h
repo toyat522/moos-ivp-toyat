@@ -46,6 +46,7 @@ class Relayer : public CMOOSApp
   unsigned long int m_iterations;
 
   std::string       m_incoming_var;
+  std::string       m_incoming_var_secondary;
   std::string       m_outgoing_var;
 
   double            m_start_time_postings;
